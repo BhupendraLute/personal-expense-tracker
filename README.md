@@ -121,11 +121,23 @@ sequenceDiagram
 
 ### 1. Prerequisites
 
-- Node.js 18+
+- Node.js 18+ (or **Bun 1.2+** recommended)
 - MongoDB Instance (Atlas or Local)
 - Google Cloud Console Project (for OAuth)
 
 ### 2. Installation
+
+This project uses **Bun** as the primary package manager for ultra-fast builds, but **npm** is fully supported.
+
+**Using Bun (Recommended):**
+
+```bash
+git clone https://github.com/BhupendraLute/personal-expense-tracker.git
+cd personal-expense-tracker
+bun install
+```
+
+**Using npm:**
 
 ```bash
 git clone https://github.com/BhupendraLute/personal-expense-tracker.git
@@ -145,7 +157,15 @@ AUTH_GOOGLE_ID="google-client-id"
 AUTH_GOOGLE_SECRET="google-client-secret"
 ```
 
-### 4. Directing the Dev Server
+### 4. Running the Development Server
+
+**Using Bun:**
+
+```bash
+bun dev
+```
+
+**Using npm:**
 
 ```bash
 npm run dev
@@ -155,4 +175,10 @@ Navigate to `http://localhost:3000` to see the application in action.
 
 ---
 
-Built with ❤️ by Bhupendra Lute
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for details.
+
+---
+
+_Built with ❤️ by Bhupendra Lute_
