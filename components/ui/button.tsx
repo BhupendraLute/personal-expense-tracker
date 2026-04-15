@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { cn } from "@/utils/cn";
 
 type ButtonProps = PropsWithChildren<
-  ButtonHTMLAttributes<HTMLButtonElement> & {
+  Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onDrag" | "onDragStart" | "onDragEnd" | "onAnimationStart"> & {
     variant?: "primary" | "secondary" | "ghost" | "danger" | "glass" | "accent";
   }
 >;
